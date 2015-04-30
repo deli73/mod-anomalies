@@ -1,8 +1,8 @@
-package com.deli73.anomalies;
+package com.deli73.anomalies.items;
+
+import com.deli73.anomalies.util.Reference;
 
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.EnumAction;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
@@ -15,17 +15,17 @@ public class ItemLiquidEnergy extends ItemFood {
 	private int secondpotionAmplifier;
 	private float secondpotionEffectProbability;
 	
-	public ItemLiquidEnergy(int food, String name){
-		super(food, 0f, false);
-		setUnlocalizedName(Anomalies.MODID + "_" + name);
-		setTextureName(Anomalies.MODID + ":" + name);
+	public ItemLiquidEnergy(int food, String name, boolean wolf){
+		super(food, 0f, wolf);
+		setUnlocalizedName(Reference.MODID + "_" + name);
+		setTextureName(Reference.MODID + ":" + name);
 		setPotionEffect(Potion.moveSpeed.id, 10, 0, 1f);
 		addSecondPotionEffect(Potion.digSpeed.id, 30, 0, .75f);
 		setMaxStackSize(16);
 		setAlwaysEdible();
 	}
 	
-	//overridden for sounds
+	//Overridden for sounds
 	@Override
 	public ItemStack onEaten(ItemStack stack, World world, EntityPlayer player)
     {
@@ -36,7 +36,7 @@ public class ItemLiquidEnergy extends ItemFood {
         return stack;
     }
 	
-	//overriden to add a second effect
+	//Overridden to add a second effect
 	@Override
 	protected void onFoodEaten(ItemStack stack, World world, EntityPlayer player){
 		super.onFoodEaten(stack, world, player);

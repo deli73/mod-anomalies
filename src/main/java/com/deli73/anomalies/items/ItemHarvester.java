@@ -1,7 +1,9 @@
-package com.deli73.anomalies;
+package com.deli73.anomalies.items;
 
 import java.util.Set;
 
+import com.deli73.anomalies.Anomalies;
+import com.deli73.anomalies.util.Reference;
 import com.google.common.collect.Sets;
 
 import net.minecraft.block.Block;
@@ -11,14 +13,16 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemTool;
 import net.minecraft.world.World;
 
+@SuppressWarnings({ "rawtypes", "unused" })
 public class ItemHarvester extends ItemTool {
+	
 	private static Set blocks = Sets.newHashSet(new Block[] {Anomalies.anomalyStone});
 
 	public ItemHarvester(ToolMaterial material, String name)
 	{
 		super(0, material, blocks);
-		setUnlocalizedName(Anomalies.MODID + "_" + name);
-		setTextureName(Anomalies.MODID + ":" + name);
+		setUnlocalizedName(Reference.MODID + "_" + name);
+		setTextureName(Reference.MODID + ":" + name);
 	}
 	
 	

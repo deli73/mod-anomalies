@@ -2,6 +2,8 @@ package com.deli73.anomalies;
 
 import java.util.Random;
 
+import com.deli73.anomalies.util.Reference;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -21,8 +23,8 @@ public class BlockAnomalyStone extends Block {
 		this.spawnmax = spawnmax;
 		this.spawnspread = spawnspread;
 		
-		setBlockName(Anomalies.MODID + "_" + name);
-		setBlockTextureName(Anomalies.MODID + ":" + name);
+		setBlockName(Reference.MODID + "_" + name);
+		setBlockTextureName(Reference.MODID + ":" + name);
 		setCreativeTab(CreativeTabs.tabBlock);
 		setStepSound(Block.soundTypeGlass);
 		
