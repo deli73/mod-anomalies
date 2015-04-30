@@ -1,0 +1,7 @@
+package com.deli73.mods.anomalies;
+
+import net.minecraft.item.Item;
+
+public class ItemCrystal extends Item {
+
+}

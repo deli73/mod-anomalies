@@ -1,0 +1,7 @@
+package com.deli73.anomalies;
+
+import net.minecraft.block.Block;
+
+public class BlockAnomalyStone extends Block {
+
+}

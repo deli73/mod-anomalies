@@ -1,0 +1,7 @@
+package com.deli73.anomalies;
+
+import net.minecraft.item.Item;
+
+public class ItemLiquidEnergy extends Item {
+
+}

@@ -1,0 +1,12 @@
+package com.deli73.anomalies;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+
+public class BlockAnomalyStone extends Block {
+
+	public BlockAnomalyStone(Material material) {
+		super(material);
+	}
+
+}

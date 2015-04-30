@@ -1,0 +1,27 @@
+Feature List!
+-Unimplemented
+=Partially Implemented
++Implemented
+?information, not a subfeature
+
+
++Anomaly Crystals
+    ?Just a crafting item, basically.
++Liquid Energy
+    +Restores hunger bar completely but no saturation
+=Anomalous Stone
+    +Acts mostly like normal stone but makes copies of itself when destroyed by explosions
+    +Can be smelted into Anomaly Crystals
+-Anomaly
+    -Causes a bunch of random stuff to happen
+    -Can be harvested (drops Anomaly Crystals) with a special tool
+-Anomaly Core
+    -crafted from Anomaly Crystals and redstone
+-Pillar Creator
+    -Create pillars of blocks by right clicking on it with a block
+        (uses all blocks in the stack or until it hits another block)
+    -Works vertically and horizontally
+    -Shift-rightclick with an empty hand to switch to delete mode
+    -When in delete mode, right click removes all contiguous blocks of the same type in that direction
+        (and gives them to you)
+    -Crafting recipe?

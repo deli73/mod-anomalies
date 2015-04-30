@@ -1,0 +1,35 @@
+package com.deli73.anomalies;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.world.Explosion;
+import net.minecraft.world.World;
+
+public class BlockAnomalyStone extends Block {
+	String name = "anomaly_stone";
+	private int spawnchance;
+	private int spawnmax;
+	private int spawnspread;
+	
+	public BlockAnomalyStone(Material material, int spawnchance, int spawnmax, int spawnspread) {
+		super(material);
+		this.spawnchance = spawnchance;
+		this.spawnmax = spawnmax;
+		this.spawnspread = spawnspread;
+		
+		setBlockName(Anomalies.MODID + "_" + name);
+		setBlockTextureName(Anomalies.MODID + ":" + name);
+		setCreativeTab(CreativeTabs.tabBlock);
+		
+		setHarvestLevel("pickaxe", 0);
+		
+	}
+	public void onBlockDestroyedByExplosion(World world, int x, int y, int z, Explosion boom){
+		if(world.rand.nextInt(this.spawnchance) == 0){
+			//block has a one in ? chance of spawning more of itself when destoryed by an explosion
+			int spawnnum = world.rand.nextInt(spawnmax);
+		}
+	}
+
+}

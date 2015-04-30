@@ -1,0 +1,14 @@
+Feature List!
+
+=Anomaly Crystals
+    ?Just a crafting item, basically.
+=Liquid Energy
+    +Restores hunger bar completely but no saturation
+=Anomalous Stone
+    +Acts mostly like normal stone but makes copies of itself when destroyed by explosions
+    -Can be smelted into Anomaly Crystals
+-Anomaly
+    -Causes a bunch of random stuff to happen
+    -Can be harvested (drops Anomaly Crystals) with a special tool
+-Anomaly Core
+    -crafted from Anomaly Crystals and redstone
